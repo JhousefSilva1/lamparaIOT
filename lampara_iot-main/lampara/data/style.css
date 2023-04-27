@@ -9,6 +9,21 @@
     transition: 0.5s;
 }
 
+.image-wrapper-container {
+  max-width: 100%;
+  text-align: center;
+}
+
+.image-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.center-image {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -83,6 +98,7 @@
     color: #fbff00!important;
     text-shadow: 0 0 100px #ffffff, 0 0 60px #f1ea8e!important;
   }
+  
 
 /* for side manu */
 .sidebar1 {

@@ -26,6 +26,20 @@ function changeStateLight(){
   }
 }
 
+function sendAction1(state) {
+  // ... código existente ...
+
+  // Obtener el contenedor de la imagen
+  var imageWrapperContainer = document.getElementById("image-wrapper-container");
+  
+  // Cambiar la imagen según el estado
+  if (state === 1) {
+    imageWrapperContainer.innerHTML = '<div class="image-wrapper"><img src="cir-on.jpg" alt="Circuito encendido" class="center-image"></div>';
+  } else if(state ==0 ) {
+    imageWrapperContainer.innerHTML = '<div class="image-wrapper"><img src="cir-off.jpg" alt="Circuito apagado" class="center-image"></div>';
+  }
+}
+
 
 function getData(){
   var xhr = new XMLHttpRequest();
@@ -176,21 +190,6 @@ setInterval(function ( ) {
   xhttp.send();
 }, 1000 ) ;
 
- /*
-  function sendSliderValue(){
-    var val = document.getElementById('pwmInput2').value;
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("PUT", "/SLIDER?VALUE="+val, true);
-        xhttp.send(); 
-  }
- 
-
-function updateTextInput2(val) {
-		console.log(val);
-		document.getElementById('pwmInput2').value = val; 
-		document.getElementById('textInput2').value = val; 
-	}
-*/
 // page4
 
 function consigue4(){

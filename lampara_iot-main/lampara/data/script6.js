@@ -123,12 +123,6 @@ function changeDataVisible(tempC, tempF, hum){
     gaugeHum.value = hum;
 }
 
-
-// adc chart 
-// documentation
-// https://api.highcharts.com/highcharts/xAxis.max
-// core coucmentation: https://code.highcharts.com/
-
 var chartADC = new Highcharts.Chart({
   chart:{ renderTo:'chart-ADC' },
   title: { text: 'Valores de LDR' },
@@ -180,21 +174,6 @@ setInterval(function ( ) {
   xhttp.send();
 }, 1000 ) ;
 
- /*
-  function sendSliderValue(){
-    var val = document.getElementById('pwmInput2').value;
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("PUT", "/SLIDER?VALUE="+val, true);
-        xhttp.send(); 
-  }
- 
-
-function updateTextInput2(val) {
-		console.log(val);
-		document.getElementById('pwmInput2').value = val; 
-		document.getElementById('textInput2').value = val; 
-	}
-*/
 // page4
 
 function consigue4(){
