@@ -26,19 +26,6 @@ function changeStateLight(){
   }
 }
 
-function sendAction1(state) {
-  // ... código existente ...
-
-  // Obtener el contenedor de la imagen
-  var imageWrapperContainer = document.getElementById("image-wrapper-container");
-  
-  // Cambiar la imagen según el estado
-  if (state === 1) {
-    imageWrapperContainer.innerHTML = '<div class="image-wrapper"><img src="cir-on.jpg" alt="Circuito encendido" class="center-image"></div>';
-  } else if(state ==0 ) {
-    imageWrapperContainer.innerHTML = '<div class="image-wrapper"><img src="cir-off.jpg" alt="Circuito apagado" class="center-image"></div>';
-  }
-}
 
 
 function getData(){
